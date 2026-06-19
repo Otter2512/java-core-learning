@@ -8,8 +8,8 @@ public class App {
 
         // Set plane to get some method
         Plane p = new Plane("Petro", m1);
-        Vehicle b = new Bike(m2);
-        Vehicle c = new Car("Petro", m3);
+        Bike b = new Bike(m2);
+        Car c = new Car("Petro", m3);
 
         System.out.println("1. Get the manufacturer is name: \n");
         System.out.println("Plane's manufacturer: "+p.getOneNameOfManufacturer()+"\n");
@@ -27,8 +27,8 @@ public class App {
         c.accelerate();
         System.out.print("Car (Stop): ");
         c.stop();
+        System.out.println("\n");
 
-        // 2 method get from plane
         System.out.print("Plane (Takes off): ");
         p.takesOff();
         System.out.print("Plane (Land): ");
